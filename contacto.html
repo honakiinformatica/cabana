@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Contactanos</title>
+	<link rel="stylesheet" type="text/css" href="css/estilo.css">
+	<link id="theme" rel="stylesheet" type="text/css" href="css/green.css">
+	<link href="calendario_dw/calendario_dw-estilos.css" type="text/css" rel="stylesheet">
+	<!--JQuery-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+	<!--calendar-->
+	<script type="text/javascript" src="calendario_dw/jquery-1.4.4.min.js"></script>
+    <script type="text/javascript" src="calendario_dw/calendario_dw.js"></script>
+
+	<!--jquery ui-->
+  <script type="text/javascript" src="jquery-ui-1.12.1/jquery-ui.js"></script>
+
+	<!--plugin jquery validar formulario-->
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-form-validator/2.3.26/jquery.form-validator.min.js"></script>
+
+	 <!--JavaScript-->
+  <script type="text/javascript" src="js/main.js"></script>
+</head>
+<body>
+	<div id="selector-theme">
+		<div id="to-green"></div>
+		<div id="to-red"></div>
+		<div id="to-blue"></div>
+	</div>
+    <section class="global">
+    	<header>
+    		<!--Cabecera-->
+            <div class="logo">
+            	<h1>CABAÑA CAMPO CORRAL</h1>
+            </div>
+
+            <div class="clearfix"></div>
+            <nav class="menu">
+            	<ul>
+            		<li><a href="index.html">INICIO</a></li>
+            		<li><a href="about.html">SOBRE NOSOTROS</a></li>
+            		<li><a href="galeria.html">GALERIA</a></li>
+            		<li><a href="contacto.html">CONTACTO</a></li>
+            	</ul>
+            </nav>
+    	</header>
+        <section>
+
+        	<div id="form">
+        	
+        	<h2>Contacto</h2>
+
+        	<form action="" method="POST" id="contact">
+        		
+        		<label for="name">Nombre</label>
+        		<input type="text" name="name" data-validation="alphanumeric">
+
+        		<label for="surname">Apellido</label>
+        		<input type="text" name="surname" data-validation="alphanumeric">
+
+        		<label for="correo">Email</label>
+        		<input type="email" name="correo" data-validation="email">
+
+        		<label for="telefono">Telefono</label>
+        		<input type="number" name="telefono" data-validation="numeric">
+
+        		<label for="date">Fecha de reserva</label>
+        		<input type="text" name="date" id="calendario" data-validation="date" data-validation-format="dd/mm/yyyy">
+
+        		<label>Mensaje</label>
+        		<textarea></textarea>
+
+        		<input type="submit" value="Enviar">
+        	</form>
+
+        	</div>
+        </section>
+       </section> 
+        <footer>
+    	Cabaña Campo Corral &copy 2020
+
+    	<a href="#" class="subir">Ir Arriba</a>
+    </footer>
+</body>
+</html>
